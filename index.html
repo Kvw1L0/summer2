@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Arcoíris Summer V7</title>
+  <link href="https://fonts.googleapis.com/css2?family=Bungee&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div id="app">
+    <div class="card">
+      <h1 id="title">Agita tu teléfono</h1>
+      <p id="subtitle">Llena el arcoíris con 50 sacudidas y descubre tu frase motivacional</p>
+      <svg id="rainbow" viewBox="0 0 220 120" xmlns="http://www.w3.org/2000/svg">
+        <path class="arc" data-index="7" d="M10 110 A100 100 0 0 1 210 110" />
+        <path class="arc" data-index="6" d="M20 110 A85 85 0 0 1 200 110" />
+        <path class="arc" data-index="5" d="M30 110 A70 70 0 0 1 190 110" />
+        <path class="arc" data-index="4" d="M40 110 A55 55 0 0 1 180 110" />
+        <path class="arc" data-index="3" d="M50 110 A40 40 0 0 1 170 110" />
+        <path class="arc" data-index="2" d="M60 110 A25 25 0 0 1 160 110" />
+        <path class="arc" data-index="1" d="M70 110 A10 10 0 0 1 150 110" />
+      </svg>
+      <div id="counter">0/50</div>
+      <button id="shakeBtn" class="fallback">Sacude aquí</button>
+      <div id="message" class="hidden"></div>
+      <button id="retry" class="hidden">Volver a intentar</button>
+      <button id="shareBtn" class="hidden">Compartir</button>
+    </div>
+  </div>
+  <img id="logo" src="logo.png" alt="Logo Oasis" />
+  <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.5.1/dist/confetti.browser.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
